@@ -8,7 +8,7 @@ export default function Home( {data}) {
   const updatePrice = async () => {
     const response = await fetch("https://api.abyiss.com/v1/coinbasepro/BTC-USD/currentprice?apiKey=D3-*q^3)w*38-wK(x)9@lUr)7HD)3PzhN-!")
     const object = await response.json()
-    document.getElementById('price').innerHTML= `${object.price.toLocaleString('en', { style: 'currency', currency: 'USD' })}`;
+    document.getElementById(styles.price).innerHTML= `${object.price.toLocaleString('en', { style: 'currency', currency: 'USD' })}`;
   }
 
   return (
