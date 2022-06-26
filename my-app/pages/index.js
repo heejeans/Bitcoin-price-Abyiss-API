@@ -6,7 +6,7 @@ export default function Home( {data}) {
   
   // function to update price by fetching api data 
   const updatePrice = async () => {
-    const response = await fetch("https://api.abyiss.com/v1/coinbasepro/BTC-USD/currentprice?apiKey=ME1PQc(B25r2j10)2Vf91S)Q6P5cs2(lq3Z")
+    const response = await fetch("https://api.abyiss.com/v1/coinbasepro/BTC-USD/currentprice?apiKey=D3-*q^3)w*38-wK(x)9@lUr)7HD)3PzhN-!")
     const object = await response.json()
     document.getElementById('price').innerHTML= `${object.price.toLocaleString('en', { style: 'currency', currency: 'USD' })}`;
   }
@@ -64,7 +64,7 @@ export default function Home( {data}) {
 // Fetches API data at request time and prerenders on page
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://api.abyiss.com/v1/coinbasepro/BTC-USD/currentprice?apiKey=ME1PQc(B25r2j10)2Vf91S)Q6P5cs2(lq3Z`)
+  const res = await fetch(`https://api.abyiss.com/v1/coinbasepro/BTC-USD/currentprice?apiKey=D3-*q^3)w*38-wK(x)9@lUr)7HD)3PzhN-!`)
   const data = await res.json()
 
   // Pass data to the page via props
